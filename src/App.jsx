@@ -5,6 +5,7 @@ import Home from './components/Home';
 import ProjectGallery from './components/ProjectGallery';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (

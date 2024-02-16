@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap'; // Importuje potrzebne komponenty z react-bootstrap
+import { Form, Button } from 'react-bootstrap'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Contact = () => {
     const [name, setName] = useState('');

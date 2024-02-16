@@ -1,10 +1,11 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'; // Importujemy Navbar i Nav z react-bootstrap
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg"> {/* Ustawiamy kolor tła na jasny i opcję rozszerzenia na large */}
+    <Navbar bg="light"> {/* Ustawiamy kolor tła na jasny i opcję rozszerzenia na large */}
       <Navbar.Brand as={Link} to="/">Your Name</Navbar.Brand> {/* Używamy Navbar.Brand z Link do nawigacji */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

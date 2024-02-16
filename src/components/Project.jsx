@@ -1,16 +1,25 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+// Project.jsx
 
-const Project = ({ project }) => {
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
+
+// Project component responsible for rendering each project as a card
+const Project = ({ title, description, image, deployedLink, githubLink }) => {
     return (
-        <Card className="mb-4">
-            <Card.Img variant="top" src={project.image} />
+        <Card className="m-5 text-center">
+            {/* Display project image */}
+            <Card.Img variant="top" src={image} />
             <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
-                <Button variant="primary" href={project.deployedLink}>View Deployed</Button>
-                <Button variant="secondary" href={project.githubLink}>GitHub</Button>
+                {/* Display project title and description */}
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{description}</Card.Text>
             </Card.Body>
+            <Card.Footer className="d-flex justify-content-between">
+                {/* Button to view deployed version of the project */}
+                <Button variant="primary" href={deployedLink} target="_blank">View Deployed</Button>
+                {/* Button to view GitHub repository */}
+                <Button variant="secondary" href={githubLink} target="_blank">GitHub</Button>
+            </Card.Footer>
         </Card>
     );
 }
