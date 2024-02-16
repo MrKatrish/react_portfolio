@@ -1,20 +1,16 @@
 import React from 'react';
-import projectsData from '';
 import Project from './Project';
+import projectData from '../../package.json';
 
 const ProjectGallery = () => {
-    return (
-        <div className="container mt-5">
-            <h2>Projects</h2>
-            <div className="row">
-                {projectsData.map((project, index) => (
-                    <div className="col-md-4" key={index}>
-                        <Project project={project} />
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <h2>Project Gallery</h2>
+      {projectData.map((project, index) => (
+        <Project key={index} project={project} />
+      ))}
+    </div>
+  );
 }
 
 export default ProjectGallery;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -8,7 +8,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add functionality
+        // Add functionality to handle form submission
     }
 
     return (

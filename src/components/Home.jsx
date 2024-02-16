@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Home = () => {
-    return (
-        <div className="container mt-5">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is where you can learn more about me and my projects.</p>
-            {/* Add your name, introduction, and other details here */}
-        </div>
-    );
+  return (
+    <div>
+      <h1>Welcome to Your Portfolio Site</h1>
+      <p>Your brand statement goes here.</p>
+      <p>This is where you showcase your skills and projects.</p>
+    </div>
+  );
 }
 
 export default Home;

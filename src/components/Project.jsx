@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 
 const Project = ({ project }) => {
     return (
