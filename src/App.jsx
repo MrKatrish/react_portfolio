@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import ProjectGallery from './components/ProjectGallery';
@@ -12,10 +12,10 @@ const App = () => {
       <div>
         <Header />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={ProjectGallery} />
-          <Route exact path="/projects/:id" component={Project} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/" element={<Home />} /> {/* Dodajemy element prop do Route */}
+          <Route exact path="/projects" element={<ProjectGallery />} /> {/* Dodajemy element prop do Route */}
+          <Route exact path="/projects/:id" element={<Project />} /> {/* Dodajemy element prop do Route */}
+          <Route exact path="/contact" element={<Contact />} /> {/* Dodajemy element prop do Route */}
         </Routes>
       </div>
     </Router>

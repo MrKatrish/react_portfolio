@@ -1,23 +1,19 @@
 import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap'; // Importujemy Navbar i Nav z react-bootstrap
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Your Name</Link>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link" to="/projects">Projects</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg"> {/* Ustawiamy kolor tła na jasny i opcję rozszerzenia na large */}
+      <Navbar.Brand as={Link} to="/">Your Name</Navbar.Brand> {/* Używamy Navbar.Brand z Link do nawigacji */}
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link as={Link} to="/projects">Projects</Nav.Link> {/* Używamy Nav.Link z Link do nawigacji */}
+          <Nav.Link as={Link} to="/contact">Contact</Nav.Link> {/* Używamy Nav.Link z Link do nawigacji */}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
