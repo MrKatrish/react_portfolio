@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,10 +15,10 @@ const App = () => {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} /> {/* Ensure you have an About route */}
+          <Route exact path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route exact path="/contact" element={<Contact />} />
-          {/* Removed Project and ProjectGallery Routes */}
         </Routes>
       </div>
     </Router>
