@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
-import ProjectGallery from './components/ProjectGallery';
-import Project from './components/Project';
+import About from './components/About'; // Assuming you have an About component
 import Contact from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,10 +12,10 @@ const App = () => {
       <div>
         <Header />
         <Routes>
-          <Route exact path="/" element={<Home />} /> {/* Dodajemy element prop do Route */}
-          <Route exact path="/projects" element={<ProjectGallery />} /> {/* Dodajemy element prop do Route */}
-          <Route exact path="/projects/:id" element={<Project />} /> {/* Dodajemy element prop do Route */}
-          <Route exact path="/contact" element={<Contact />} /> {/* Dodajemy element prop do Route */}
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} /> {/* Ensure you have an About route */}
+          <Route exact path="/contact" element={<Contact />} />
+          {/* Removed Project and ProjectGallery Routes */}
         </Routes>
       </div>
     </Router>
