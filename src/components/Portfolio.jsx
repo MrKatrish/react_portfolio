@@ -49,7 +49,7 @@ const projects = [
 
 const Portfolio = () => {
     return (
-        <Element name="portfolioSection" className="portfolio-section">
+        <Element name="portfolio" className="portfolio-section">
             <div className="container">
                 <h2 className="m-5 text-center">Project Gallery</h2>
                 <div className="row">

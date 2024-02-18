@@ -4,7 +4,7 @@ import profileImg from '../assets/profile-picture.jpg';
 
 const About = () => {
   return (
-    <Element name="about" className="about">
+    <Element name="about" className="about-section">
       <div className="container">
         <div className="section-title">
           <h2>About</h2>
