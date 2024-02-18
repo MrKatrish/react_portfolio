@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Element } from 'react-scroll';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 
 const Contact = () => {
@@ -13,6 +14,7 @@ const Contact = () => {
     }
 
     return (
+        <Element name="contact" className="contact-section">
         <Container className="my-5">
             <Row>
                 <Col md={6}>
@@ -69,6 +71,7 @@ const Contact = () => {
                 </Col>
             </Row>
         </Container>
+        </Element>
     );
 }
 

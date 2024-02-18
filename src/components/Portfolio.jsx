@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
+import { Element } from 'react-scroll';
 
 const projects = [
     {
@@ -49,17 +49,19 @@ const projects = [
 
 const Portfolio = () => {
     return (
-      <Container>
-          <h2 className="m-5 text-center">Project Gallery</h2>
-          <Row>
-              {projects.map((project, index) => (
-                  <Col key={index} md={4}>
-                      <ProjectCard {...project} />
-                  </Col>
-              ))}
-          </Row>
-      </Container>
+        <Element name="portfolioSection" className="portfolio-section">
+            <div className="container">
+                <h2 className="m-5 text-center">Project Gallery</h2>
+                <div className="row">
+                    {projects.map((project, index) => (
+                        <div key={index} className="col-md-4">
+                            <ProjectCard {...project} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </Element>
     );
-  }
-  
-  export default Portfolio;
+}
+
+export default Portfolio;
