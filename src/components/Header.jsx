@@ -21,12 +21,12 @@ const Header = () => {
         <Nav.Link href="https://github.com/yourusername" target="_blank"><FaGithub /></Nav.Link>
       </Nav>
       <Nav className="flex-column w-100">
-        {/* Poprawione linki do przewijania */}
-        <ScrollLink to="home" className="nav-text-icon" spy={true} smooth={true} duration={500}><FaHome /> Home</ScrollLink>
-        <ScrollLink to="about" className="nav-text-icon" spy={true} smooth={true} duration={500}><FaUser /> About</ScrollLink>
-        <ScrollLink to="resume" className="nav-text-icon" spy={true} smooth={true} duration={500}><FaFile /> Resume</ScrollLink>
-        <ScrollLink to="portfolio" className="nav-text-icon" spy={true} smooth={true} duration={500}><FaBriefcase /> Portfolio</ScrollLink>
-        <ScrollLink to="contact" className="nav-text-icon" spy={true} smooth={true} duration={500}><FaEnvelope /> Contact</ScrollLink>
+        {/* Scrollable Links with consistent icon and text style */}
+        <ScrollLink to="home" className="nav-link" spy={true} smooth={true} duration={500}><FaHome /> Home</ScrollLink>
+        <ScrollLink to="about" className="nav-link" spy={true} smooth={true} duration={500}><FaUser /> About</ScrollLink>
+        <ScrollLink to="resume" className="nav-link" spy={true} smooth={true} duration={500}><FaFile /> Resume</ScrollLink>
+        <ScrollLink to="portfolio" className="nav-link" spy={true} smooth={true} duration={500}><FaBriefcase /> Portfolio</ScrollLink>
+        <ScrollLink to="contact" className="nav-link" spy={true} smooth={true} duration={500}><FaEnvelope /> Contact</ScrollLink>
       </Nav>
     </Navbar>
   );

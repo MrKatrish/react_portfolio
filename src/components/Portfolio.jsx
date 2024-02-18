@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
+import './Portfolio.css';
 
 const projects = [
     {
@@ -50,11 +51,11 @@ const projects = [
 const Portfolio = () => {
     return (
         <Element name="portfolio" className="portfolio-section">
-            <div className="container">
+            <div className="grid-container">
                 <h2 className="m-5 text-center">Project Gallery</h2>
-                <div className="row">
+                <div className="project-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="col-md-4">
+                        <div key={index} className="d-flex justify-content-around">
                             <ProjectCard {...project} />
                         </div>
                     ))}

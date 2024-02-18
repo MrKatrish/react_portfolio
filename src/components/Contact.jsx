@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
+import './Portfolio.css';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -15,7 +16,13 @@ const Contact = () => {
 
     return (
         <Element name="contact" className="contact-section">
-            <Container className="my-5">
+      <div className="grid-container">
+      <Container className="my-5">
+        <Row>
+            <Col>
+                <h2 className="text-center">Contact</h2>
+            </Col>
+        </Row>
                 <Row>
                     <Col md={6}>
                         <Card>
@@ -68,6 +75,7 @@ const Contact = () => {
                 </Col>
             </Row>
         </Container>
+        </div>
         </Element>
     );
 }

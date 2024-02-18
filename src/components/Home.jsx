@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => {
   return (
     <Element name="home" className="home-section">
-      <div className="container">
+      <div className="grid-container">
         <div className="row">
           <div className="col-md-8 offset-md-2 text-center">
             <h1 className="mt-5">Welcome to Your Portfolio Site</h1>

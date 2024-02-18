@@ -5,7 +5,7 @@ import profileImg from '../assets/profile-picture.jpg';
 const About = () => {
   return (
     <Element name="about" className="about-section">
-      <div className="container">
+      <div className="grid-container">
         <div className="section-title">
           <h2>About</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
