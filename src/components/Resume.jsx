@@ -25,7 +25,6 @@ const Resume = () => {
               <Button href={resumePDF} download="My_Resume.pdf" variant="primary">Download My CV</Button>
             </div>
           </Col>
-
         </Row>
       </Container>
           </div>
