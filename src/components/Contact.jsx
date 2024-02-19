@@ -3,7 +3,7 @@ import { Element } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
-import './Portfolio.css';
+import './style.css';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -43,7 +43,7 @@ const Contact = () => {
       <Container className="my-5">
         <Row>
             <Col>
-                <h2 className="text-center mb-5">Contact</h2>
+                <h2 className="text-center mb-5 title">Contact</h2>
             </Col>
         </Row>
                 <Row>

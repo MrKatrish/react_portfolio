@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import profileImg from '../assets/profile-picture.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import './style.css';
 
 const About = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const About = () => {
         <section id="about" className="about">
           <div className="container">
             <div className="section-title">
-              <h2 className="text-center mb-5 mt-5">About</h2>
+              <h2 className="text-center mb-5 mt-5 title">About</h2>
               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
             </div>
 
@@ -66,7 +67,7 @@ const About = () => {
   <section id="facts" className="facts grid-container mt-5 mb-5">
     <div className="container">
       <div className="section-title">
-        <h2 className="text-center mb-5">Facts</h2>
+        <h2 className="text-center mb-5 title">Facts</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
       </div>
 
@@ -111,7 +112,7 @@ const About = () => {
   <section id="skills" className="skills section-bg grid-container mt-5 mb-5">
     <div className="container">
       <div className="section-title">
-        <h2 className="text-center mb-5">Skills</h2>
+        <h2 className="text-center mb-5 title">Skills</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
       </div>
 

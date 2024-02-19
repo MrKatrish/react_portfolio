@@ -4,7 +4,7 @@ import AOS from 'aos';
 import Typed from 'typed.js';
 import 'aos/dist/aos.css'; // Import AOS animations
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
-import './Portfolio.css';
+import './style.css';
 
 const Home = () => {
   useEffect(() => {
