@@ -1,6 +1,8 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import resumeImage from '../assets/CV-Picture.jpg';
 import resumePDF from '../assets/CV Michal Paleczny.pdf';
 import './Portfolio.css';
@@ -16,10 +18,10 @@ const Resume = () => {
           </Col>
         </Row>
         <Row className="align-items-center">
-        <Col md={6}>
+        <Col md={6} data-aos="fade-left">
             <p>Here's a brief overview of my professional experience and skills. Please download the full resume for more detailed information.</p>
           </Col>
-          <Col md={6}>
+          <Col md={6} data-aos="fade-right">
             <img src={resumeImage} alt="My Resume" style={{ maxWidth: '100%', height: 'auto' }} />
             <div className="mt-3">
               <Button href={resumePDF} download="My_Resume.pdf" variant="primary">Download My CV</Button>

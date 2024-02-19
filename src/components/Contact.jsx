@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
 import './Portfolio.css';
 
@@ -24,7 +26,7 @@ const Contact = () => {
             </Col>
         </Row>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-left">
                         <Card>
                             <Card.Body>
                                 <Card.Title>Contact Information</Card.Title>
@@ -45,7 +47,7 @@ const Contact = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-right">
                         <Card>
                         <Card.Body>
                             <Card.Title>Send a Message</Card.Title>

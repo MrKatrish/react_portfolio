@@ -17,12 +17,12 @@ const About = () => {
   return (
     <>
       {/* About Section */}
-      <Element name="About" className="about-section">
+      <Element name="About" className="about-section mt-5">
           <div className="grid-container">
         <section id="about" className="about">
           <div className="container">
             <div className="section-title">
-              <h2>About</h2>
+              <h2 className="text-center">About</h2>
               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
             </div>
 
@@ -30,7 +30,7 @@ const About = () => {
               <div className="col-lg-4" data-aos="fade-right">
                 <img src={profileImg} className="img-fluid" alt="Profile" />
               </div>
-              <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <div className="col-lg-8 pt-4 pt-lg-0 content mt-5" data-aos="fade-left">
                 <h3>UI/UX Designer & Web Developer.</h3>
                 <p className="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -63,11 +63,12 @@ const About = () => {
         </section>
         </div>
       </Element>
+
       <Element name="facts" className="facts-section">
-  <section id="facts" className="facts grid-container">
+  <section id="facts" className="facts grid-container mt-5">
     <div className="container">
       <div className="section-title">
-        <h2>Facts</h2>
+        <h2 className="text-center">Facts</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
       </div>
 
@@ -109,10 +110,10 @@ const About = () => {
 </Element>
 
 <Element name="skills" className="skills-section">
-  <section id="skills" className="skills section-bg grid-container">
+  <section id="skills" className="skills section-bg grid-container mt-5">
     <div className="container">
       <div className="section-title">
-        <h2>Skills</h2>
+        <h2 className="text-center">Skills</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
       </div>
 

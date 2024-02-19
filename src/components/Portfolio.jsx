@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Portfolio.css';
 
 const projects = [
@@ -55,7 +57,9 @@ const Portfolio = () => {
                 <h2 className="m-5 text-center">Project Gallery</h2>
                 <div className="project-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="d-flex justify-content-around">
+                        <div key={index} className="d-flex justify-content-around" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <ProjectCard {...project} />
                         </div>
                     ))}
