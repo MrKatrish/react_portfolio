@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { Element } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -16,13 +16,34 @@ const Contact = () => {
         console.log({ name, email, subject, message });
     }
 
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: true,
+        });
+
+
+        const handleScroll = () => {
+            AOS.refresh();
+        };
+
+
+        window.addEventListener('scroll', handleScroll);
+
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <Element name="contact" className="contact-section">
       <div className="grid-container">
       <Container className="my-5">
         <Row>
             <Col>
-                <h2 className="text-center">Contact</h2>
+                <h2 className="text-center mb-5">Contact</h2>
             </Col>
         </Row>
                 <Row>

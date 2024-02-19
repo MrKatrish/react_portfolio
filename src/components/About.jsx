@@ -3,11 +3,10 @@ import { Element } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import profileImg from '../assets/profile-picture.jpg';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Załóżmy, że Bootstrap jest już zaimportowany w twoim projekcie
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const About = () => {
   useEffect(() => {
-    // Initialize AOS for animations
     AOS.init({
       duration: 1000,
       once: true,
@@ -22,7 +21,7 @@ const About = () => {
         <section id="about" className="about">
           <div className="container">
             <div className="section-title">
-              <h2 className="text-center">About</h2>
+              <h2 className="text-center mb-5">About</h2>
               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
             </div>
 
@@ -35,7 +34,6 @@ const About = () => {
                 <p className="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                {/* Personal Details List */}
                 <div className="row">
                   <div className="col-lg-6">
                     <ul>
@@ -68,7 +66,7 @@ const About = () => {
   <section id="facts" className="facts grid-container mt-5">
     <div className="container">
       <div className="section-title">
-        <h2 className="text-center">Facts</h2>
+        <h2 className="text-center mb-5">Facts</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
       </div>
 
@@ -113,7 +111,7 @@ const About = () => {
   <section id="skills" className="skills section-bg grid-container mt-5">
     <div className="container">
       <div className="section-title">
-        <h2 className="text-center">Skills</h2>
+        <h2 className="text-center mb-5">Skills</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
       </div>
 

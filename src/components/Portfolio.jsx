@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
 import AOS from 'aos';
@@ -51,6 +51,13 @@ const projects = [
 ];
 
 const Portfolio = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            once: true, 
+        });
+    }, []);
+
     return (
         <Element name="portfolio" className="portfolio-section">
             <div className="grid-container">

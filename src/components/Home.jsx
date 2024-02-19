@@ -26,7 +26,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Element name="home" className="home-section">
+    <Element name="home" className="home-section first-page">
       <div id="hero" className="d-flex flex-column justify-content-center align-items-center grid-container">
         <div className="hero-container" data-aos="fade-in">
           <h1 className="text-center">Michal Paleczny</h1>
