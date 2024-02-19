@@ -16,12 +16,12 @@ const About = () => {
   return (
     <>
       {/* About Section */}
-      <Element name="About" className="about-section mt-5">
-          <div className="grid-container">
+      <Element name="About" className="about-section">
+          <div className="grid-container mb-5">
         <section id="about" className="about">
           <div className="container">
             <div className="section-title">
-              <h2 className="text-center mb-5">About</h2>
+              <h2 className="text-center mb-5 mt-5">About</h2>
               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
             </div>
 
@@ -63,7 +63,7 @@ const About = () => {
       </Element>
 
       <Element name="facts" className="facts-section">
-  <section id="facts" className="facts grid-container mt-5">
+  <section id="facts" className="facts grid-container mt-5 mb-5">
     <div className="container">
       <div className="section-title">
         <h2 className="text-center mb-5">Facts</h2>
@@ -108,7 +108,7 @@ const About = () => {
 </Element>
 
 <Element name="skills" className="skills-section">
-  <section id="skills" className="skills section-bg grid-container mt-5">
+  <section id="skills" className="skills section-bg grid-container mt-5 mb-5">
     <div className="container">
       <div className="section-title">
         <h2 className="text-center mb-5">Skills</h2>

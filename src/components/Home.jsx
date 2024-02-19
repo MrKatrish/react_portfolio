@@ -29,7 +29,7 @@ const Home = () => {
     <Element name="home" className="home-section first-page">
       <div id="hero" className="d-flex flex-column justify-content-center align-items-center grid-container">
         <div className="hero-container" data-aos="fade-in">
-          <h1 className="text-center">Michal Paleczny</h1>
+          <h1 className="text-center" color="white">Michal Paleczny</h1>
           <p className="text-center">I'm <span className="typed" data-typed-items="Designer, Developer, Freelancer, Gamer"></span></p>
         </div>
       </div>

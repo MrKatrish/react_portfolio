@@ -9,8 +9,8 @@ import './Portfolio.css';
 
 const Resume = () => {
   return (
-      <Element name="Resume" className="resume-section">
-          <div className="grid-container">
+      <Element name="resume" className="resume-section">
+          <div className="grid-container mb-5">
           <Container className="my-5">
         <Row>
           <Col md={12}>
@@ -21,9 +21,9 @@ const Resume = () => {
         <Col md={6} data-aos="fade-left">
             <p>Here's a brief overview of my professional experience and skills. Please download the full resume for more detailed information.</p>
           </Col>
-          <Col md={6} data-aos="fade-right">
+          <Col md={6} data-aos="fade-right" className="mt-3">
             <img src={resumeImage} alt="My Resume" style={{ maxWidth: '100%', height: 'auto' }} />
-            <div className="mt-3">
+            <div className="mt-3 align-items-center">
               <Button href={resumePDF} download="My_Resume.pdf" variant="primary">Download My CV</Button>
             </div>
           </Col>

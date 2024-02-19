@@ -64,7 +64,7 @@ const Portfolio = () => {
                 <h2 className="m-5 text-center">Project Gallery</h2>
                 <div className="project-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="d-flex justify-content-around" data-aos="flip-left"
+                        <div key={index} className="d-flex justify-content-around m-3" data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
                             <ProjectCard {...project} />

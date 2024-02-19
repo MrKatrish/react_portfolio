@@ -14,6 +14,14 @@
     grid-column: 2 / -1;
 }
 
+.home-section {
+  background-image: url('src/assets/banner.jpg'); 
+  background-size: cover; 
+  background-attachment: fixed; 
+  background-position: center; 
+  height: 100vh; 
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -30,7 +38,15 @@
 .first-page {
   height: 100vh;
   width: 100vw;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+
+.about-section,
+.skills-section,
+.portfolio-section{
+  background-color: #d8eefe;
+
 }
