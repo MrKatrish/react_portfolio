@@ -89,7 +89,7 @@ These features combine to create a polished, professional portfolio that showcas
 
 ![DEMO](src/assets/demo.gif)
 
-Example page you can see here: [Working DEMO!](https://tranquil-bombolone-a125e9.netlify.app/)
+Example page you can see here: [Working DEMO!](https://mrkatrish-react-portfolio.netlify.app/))
 
 ## License
 
