@@ -68,3 +68,52 @@
   width: 50%; /* Length of the underline */
   background-color: #007bff; /* Color of the underline */
 }
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd; /* subtelne obramowanie */
+  border-radius: 10px; /* zaokrąglone rogi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* dodanie cienia */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* płynne przejście cienia */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* delikatny efekt podnoszenia */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* zwiększenie cienia przy hover */
+}
+
+.project-image {
+  width: 100%;
+  border-top-left-radius: 10px; /* zaokrąglenie górnych rogów obrazka */
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  padding: 15px; /* dodatkowy padding */
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+  text-align: center; /* wyśrodkowanie tekstu */
+}
+
+.project-info h5,
+.project-info p {
+  margin: 10px 0; /* marginesy dla tekstu */
+}
+
+.project-card-btns {
+  display: flex;
+  justify-content: space-between; /* wyrównanie przycisków */
+  padding: 0 10px; /* padding do wyrównania przycisków */
+}
+
+.project-card:hover .project-info {
+  transform: translateY(0);
+}

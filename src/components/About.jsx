@@ -19,7 +19,7 @@ const About = () => {
       {/* About Section */}
       <Element name="About" className="about-section">
           <div className="grid-container mb-5">
-        <section id="about" className="about">
+        <section className="about">
           <div className="container">
             <div className="section-title">
               <h2 className="text-center mb-5 mt-5 title">About</h2>

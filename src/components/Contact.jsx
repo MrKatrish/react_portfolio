@@ -52,9 +52,9 @@ const Contact = () => {
                             <Card.Body>
                                 <Card.Title>Contact Information</Card.Title>
                                 <Card.Text>
-                                    <div>Location: A108 Adam Street, New York, NY 535022</div>
-                                    <div>Email: info@example.com</div>
-                                    <div>Call: +1 5589 55488 55</div>
+                                    <div className="m-3">Location: A108 Adam Street, New York, NY 535022</div>
+                                    <div className="m-3">Email: info@example.com</div>
+                                    <div className="m-3">Call: +1 5589 55488 55</div>
                                 </Card.Text>
                                 {/* Google Maps iframe */}
                                 <iframe

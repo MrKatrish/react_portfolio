@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
@@ -60,17 +61,31 @@ const Portfolio = () => {
 
     return (
         <Element name="portfolio" className="portfolio-section">
-            <div className="grid-container">
-                <h2 className="m-5 text-center title">Project Gallery</h2>
-                <div className="project-grid">
-                    {projects.map((project, index) => (
-                        <div key={index} className="d-flex justify-content-around m-3" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000">
-                            <ProjectCard {...project} />
-                        </div>
-                    ))}
-                </div>
+            <div className="grid-container mb-5">
+                <Container className="my-5">
+                    <Row>
+                        <Col>
+                            <h2 className="text-center title mb-5">Portfolio</h2>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {projects.map((project, index) => (
+                            <Col md={4} key={index} className="project-card-col mb-5">
+                                <div className="project-card" onMouseEnter={() => {/* Obsługa hover */}} onMouseLeave={() => {/* Obsługa hover */}}>
+                                    <img src={project.image} alt={project.title} className="project-image"/>
+                                    <div className="project-info">
+    <h5>{project.title}</h5>
+    <p>{project.description}</p>
+    <div className="project-card-btns">
+        <Button variant="primary" href={project.deployedLink} target="_blank">Live Demo</Button>
+        <Button variant="secondary" href={project.githubLink} target="_blank">GitHub</Button>
+    </div>
+</div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
             </div>
         </Element>
     );
