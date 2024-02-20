@@ -1,129 +1,110 @@
-# Challenge 13: React Portfolio
+# React Porftolio
 
-For this challenge, you will utilize what you have learned in `Module 13: React` to develop the initial scaffolding of your portfolio sites.
+![GitHub](https://img.shields.io/github/license/MrKatrish/react_portfolio)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/MrKatrish/react_portfolio)
+![GitHub top language](https://img.shields.io/github/languages/top/MrKatrish/react_portfolio)
 
-Now that you've worked with React and have multiple projects to share, it's time to develop the initial scaffolding for your first portfolio site as well as create and/or update other materials so that you can showcase your skills to potential employers. Creating a portfolio using React will help set you apart from other developers whose portfolios do not use some of the latest technologies.
+## Description
 
-## Instructions
+This React Portfolio project represents the culmination of skills acquired in Module 13: React, focusing on developing a modern, dynamic portfolio site. Aimed at showcasing my development projects and professional accomplishments, this portfolio is designed to highlight my expertise to potential employers and collaborators. Leveraging React and advanced web development techniques, it sets a new standard for my online presence, differentiating me from peers by utilizing the latest technologies in web development.
 
-* Students must fullfil the requirements listed in the following sections:
+## Table of Contents
 
-### Design
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+- [Technologies Used](#technologies-used)
 
-Remember, "good" design is subjective. Your site should look "polished" and "professional". Here are a few guidelines on what that means:
+## Installation
 
-* Mobile-first design
+To install the Team Profile Generator, follow these steps:
 
-* Choose a color palette for your site so it doesn't just look like the default bootstrap theme or an unstyled HTML site.
+1. Clone the repository to your local machine using `git clone https://github.com/MrKatrish/react_portfolio.git`
+2. Navigate to the cloned directory and run `npm install` to install all necessary dependencies.
+3. Ensure Node.js is installed on your machine to execute the application.
 
-* Make sure the font size is large enough to read and that the colors don't cause eye strain.
+## Usage
 
-### Base Requirements
+To get the most out of this React Portfolio, follow these steps:
 
-* Technologies that must be used:
-  * [ ] React
-  * [ ] Navigation with `React Router`, dynamic rendering, or another third part router
-* Your portfolio **must contain** the following information:
-  * [ ] Your name
-  * [ ] Links to your:
-    * [ ] GitHub Profile
-    * [ ] LinkedIn Page
-    * [ ] Email Address
-    * [ ] Phone Number - (optional)
-    * [ ] PDF version of your resume
-      * Your resume **must** contain up-to-date projects and professional experience
-    * [ ] A list of projects (Challenges or Projects). For each project, make sure you have the following:
-      * [ ] Project title
-      * [ ] Link to the deployed version
-      * [ ] Link to the GitHub repository
-      * [ ] GIF or screenshot of the deployed application
+### Viewing the Portfolio
 
-### Required Components
+1. **Access the Live Site**: Visit the deployed version of the portfolio through the provided URL to see the project in action.
 
-* At a minium, your portfolio must render these 6 components:
-  1. [ ] App
-  2. [ ] Header
-  4. [ ] Home
-  5. [ ] Project Gallery
-  6. [ ] Project
-  7. [ ] Contact
+### Navigating the Portfolio
 
-### Required Component Content
+1. **Explore the Home Page**: Start with the home page to get an overview of what the portfolio offers, including a brief introduction and navigation options.
+2. **Browse Projects**: Navigate to the 'Project Gallery' to view a curated selection of projects. Each project entry includes a title, a brief description, and links to the live version and the GitHub repository.
+3. **Download Resume**: Access the resume section to download a PDF version of the professional resume, detailing skills, experiences, and achievements.
 
-* [ ] App:
-  * [ ] Must be your top level component and render all necessary children components
-* [ ] Header:
-  * [ ] Must be rendered across the entire site
-  * [ ] Must Contain a Navbar
-* [ ] Project Gallery:
-  * [ ] Must render dynamically 6 instances of the Project component
-    * [ ] Be sure to store your project data in a JSON file and import it into your project
-* [ ] Project:
-  * [ ] Must be a reusable component that ingests JSON data as a props and renders a single instance for each project.
-  * [ ] Must utilize router props to properly render the right project based on user selection
-  * [ ] Must render the following info:
-    * [ ] Project title
-    * [ ] Link to the deployed version
-    * [ ] Link to the GitHub repository
-    * [ ] GIF or screenshot of the deployed application
-* [ ] Contact:
-  * [ ] Must have contact information
-  * [ ] Have a contact form for handling events
-* [ ] Home:
-  * This should be a welcome landing page that contains:
-    * [ ] Your Name
-    * [ ] A Headshot of you
-    * [ ] Your brand statement
-    * [ ] Some indication that this is your portfolio site
+### Contacting
 
-### Updated Social Media Presence
+1. **Use the Contact Form**: For inquiries, suggestions, or professional connections, use the contact form available in the 'Contact' section. Enter your name, email, and message, then submit the form to reach out.
 
-#### LinkedIn
+### Following Social Media Links
 
-* Make sure to update your LinkedIn Profile with the new skills you've acquired since the last time it was updated.
-* If you do not have a LinkedIn profile, please create one.
+1. **Connect on LinkedIn**: Click on the LinkedIn link to view the professional profile and connect.
+2. **Explore GitHub Repositories**: Visit the GitHub link to explore repositories, contributions, and project developments.
 
-#### GitHub
+### For Developers
 
-* Update GitHub profile with pinned repositories featuring those same projects.
+If you're interested in contributing to the portfolio or wish to run it locally:
 
-## Grading
+1. **Clone the Repository**: Use `git clone https://github.com/MrKatrish/react_portfolio` to clone the portfolio repository to your local machine.
+2. **Install Dependencies**: Navigate to the cloned directory and run `npm install` to install all required dependencies.
+3. **Start the Development Server**: Run `npm start` to launch the development server. The portfolio will be available at `http://localhost:3000` in your web browser.
+4. **Make Contributions**: Feel free to make improvements or add new features. Push your changes and open a pull request for review.
 
-This challenge is assessed on the following criteria:
+This portfolio is a dynamic platform designed to showcase professional skills and projects. Your feedback and contributions are welcome to enhance its functionality and design.
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the above acceptance criteria
+## Features
 
-### Deployment: 32%
+This React Portfolio is designed with a focus on usability, aesthetics, and functionality, offering the following features:
 
-* Application deployed at live URL (if applicable).
+- **Dynamic Content Rendering**: Utilizes React and React Router for smooth navigation and dynamic content updates without the need for page reloads.
 
-* Application loads with no errors.
+- **Project Showcase**: Features a dynamic gallery of projects, each detailed with titles, links to the deployed version, GitHub repository, and visual previews (GIFs/screenshots), making it easy for visitors to explore your work.
 
-* Application GitHub URL submitted (if applicable).
+- **Professional Resume**: Includes a downloadable PDF version of the resume, providing a comprehensive overview of professional experience and skills.
 
-* GitHub repository that contains application code.
+- **Contact Form**: Offers a contact form for easy communication, facilitating direct engagement with potential employers, collaborators, and visitors.
 
-### Application Quality: 15%
+- **Customized Styling**: Goes beyond the default styling with a carefully selected color palette and font settings, enhancing readability and user experience.
 
-* User experience is intuitive and easy to navigate.
+- **Social Media Integration**: Direct links to GitHub and LinkedIn profiles, along with contact information, making it simple for visitors to connect on professional platforms.
 
-* User interface style is clean and polished.
+- **Accessibility Considerations**: Ensures the website is accessible to users with disabilities, following best practices for web accessibility.
 
-* Application uses a color scheme other than the default Bootstrap color palette.
+- **Continuous Updates**: Designed to be easily updated with new projects and experiences, keeping the portfolio current and relevant.
 
-### Repository Quality: 13%
+These features combine to create a polished, professional portfolio that showcases your skills and projects in the best light possible, distinguishing you in the job market and professional circles.
 
-* Repository has a unique name.
 
-* Repository follows best practices for file structure and naming conventions.
+## Screenshots
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+![DEMO](src/assets/demo.gif)
 
-* Repository contains multiple descriptive commit messages.
+Example page you can see here: https://mrkatrish.github.io/???/
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+## License
 
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+This project was inspired by the need for a convenient tool to create HTML profiles for software engineering teams. Special thanks to:
+
+- Node.js community for providing valuable resources and support.
+- All contributors who tested the application and provided feedback.
+
+## Technologies Used
+
+- JavaScript
+- Node.js
+
+Your feedback and contributions are welcome! Please feel free to submit issues or pull requests to the repository.
