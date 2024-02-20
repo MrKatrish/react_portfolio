@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
+import profileImg from '../assets/profile-picture.jpg';
 
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="flex-column align-items-center" style={{ width: '250px', height: '100vh', position: 'fixed' }}>
       <Navbar.Brand as={Link} to="/" className="d-flex flex-column align-items-center my-4">
-        <img src="src/assets/profile-picture.jpg" alt="Profile" className="rounded-circle mb-3" style={{ width: '80px', height: '80px', border: '2px solid gray'}} />
+        <img src={profileImg} alt="Profile" className="rounded-circle mb-3" style={{ width: '80px', height: '80px', border: '2px solid gray'}} />
         <h5 className="nav-link">Michal Paleczny</h5>
       </Navbar.Brand>
       <Nav className="social-media-links d-flex justify-content-around w-100 mb-4">

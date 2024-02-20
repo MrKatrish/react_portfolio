@@ -5,12 +5,13 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
+import localImage from '../assets/cards/Team Profile Generator.png';
 
 const projects = [
     {
         title: "Team Profile Generator",
         description: "Generate team profiles using Node.js",
-        image: "src/assets/cards/Team Profile Generator.png",
+        image: "../../assets/cards/Team Profile Generator.png",
         deployedLink: "https://mrkatrish.github.io/team_profile_generator/",
         githubLink: "https://github.com/MrKatrish/team_profile_generator"
     },
@@ -77,7 +78,7 @@ const Portfolio = () => {
                                 <ProjectCard
                                     title={project.title}
                                     description={project.description}
-                                    image={project.image}
+                                    image={localImage}
                                     deployedLink={project.deployedLink}
                                     githubLink={project.githubLink}
                                 />

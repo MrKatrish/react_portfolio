@@ -5,6 +5,7 @@ import Typed from 'typed.js';
 import 'aos/dist/aos.css'; // Import AOS animations
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import './style.css';
+import banner from '../assets/banner.jpg';
 
 const Home = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Element name="home" className="home-section first-page">
+    <Element name="home" className="home-section first-page" style={{ backgroundImage: `url(${banner})`}}>
       <div id="hero" className="d-flex flex-column justify-content-center align-items-center grid-container">
         <div className="hero-container" data-aos="fade-in">
           <h1 className="text-center" color="white">Michal Paleczny</h1>

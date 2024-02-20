@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './style.css';
 
 const ProjectCard = ({ title, description, image, deployedLink, githubLink }) => {
