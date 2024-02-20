@@ -21,22 +21,22 @@ const Resume = () => {
         <h4>Michal Paleczny</h4>
               <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
 
-              <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
+              <h3 className="resume-title">Education</h3>
+            <div className="resume-item">
               <h4>Master of Fine Arts &amp; Graphic Design</h4>
               <h5>2015 - 2016</h5>
               <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
               <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
             </div>
-            <div class="resume-item">
+            <div className="resume-item">
               <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
               <h5>2010 - 2014</h5>
               <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
               <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
             </div>
            
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
+            <h3 className="resume-title">Professional Experience</h3>
+            <div className="resume-item">
               <h4>Senior graphic design specialist</h4>
               <h5>2019 - Present</h5>
               <p><em>Experion, New York, NY </em></p>

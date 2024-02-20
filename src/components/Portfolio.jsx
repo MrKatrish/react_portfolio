@@ -55,7 +55,7 @@ const Portfolio = () => {
     useEffect(() => {
         AOS.init({
             duration: 2000,
-            once: true, 
+            once: true,
         });
     }, []);
 
@@ -70,18 +70,17 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                         {projects.map((project, index) => (
-                            <Col md={4} key={index} className="project-card-col mb-5">
-                                <div className="project-card" onMouseEnter={() => {/* Obsługa hover */}} onMouseLeave={() => {/* Obsługa hover */}}>
-                                    <img src={project.image} alt={project.title} className="project-image"/>
-                                    <div className="project-info">
-    <h5>{project.title}</h5>
-    <p>{project.description}</p>
-    <div className="project-card-btns">
-        <Button variant="primary" href={project.deployedLink} target="_blank">Live Demo</Button>
-        <Button variant="secondary" href={project.githubLink} target="_blank">GitHub</Button>
-    </div>
-</div>
-                                </div>
+                            <Col md={4} key={index} className="mb-5"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <ProjectCard
+                                    title={project.title}
+                                    description={project.description}
+                                    image={project.image}
+                                    deployedLink={project.deployedLink}
+                                    githubLink={project.githubLink}
+                                />
                             </Col>
                         ))}
                     </Row>

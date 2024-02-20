@@ -1,17 +1,20 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
+import './style.css';
 
 const ProjectCard = ({ title, description, image, deployedLink, githubLink }) => {
   return (
-    <Card style={{ width: '18rem', marginBottom: '2rem' }}>
-      <Card.Img variant="top" src={image} alt={title} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <Button variant="primary" href={deployedLink} target="_blank">View Project</Button>
-        <Button variant="secondary" href={githubLink} target="_blank" style={{ marginLeft: '10px' }}>GitHub</Button>
-      </Card.Body>
-    </Card>
+    <div className="project-card"> 
+      <img src={image} alt={title} className="project-image"/>
+      <div className="project-info">
+        <h5>{title}</h5>
+        <p>{description}</p>
+        <div className="project-card-btns">
+          <Button variant="primary" href={deployedLink} target="_blank">Live Demo</Button>
+          <Button variant="secondary" href={githubLink} target="_blank">GitHub</Button>
+        </div>
+      </div>
+    </div>
   );
 };
 

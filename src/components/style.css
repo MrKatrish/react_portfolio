@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
 .portfolio-section,
 .contact-section,
 .resume-section,
@@ -51,41 +57,41 @@
 
 .title {
   position: relative;
-  display: inline-block; /* Keeps the width to the content size */
-  text-align: center; /* Aligns the text to the center */
-  font-family: 'YourFontName', sans-serif; /* Replace with your font choice */
-  margin: 0 auto; /* Centers the block itself if within a flex or grid container */
-  padding-bottom: 5px; /* Gives space for the underline */
+  display: inline-block;
+  text-align: center;
+  font-family: 'YourFontName', sans-serif;
+  margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 .title::after {
   content: '';
   position: absolute;
-  bottom: 0; /* Adjust as needed, 0 to attach it directly under the text */
-  left: 50%; /* Starts the line from the middle */
-  transform: translateX(-50%); /* Centers the line */
-  height: 2px; /* Thickness of the underline */
-  width: 50%; /* Length of the underline */
-  background-color: #007bff; /* Color of the underline */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 50%;
+  background-color: #007bff;
 }
 
 .project-card {
   position: relative;
   overflow: hidden;
-  border: 1px solid #ddd; /* subtelne obramowanie */
-  border-radius: 10px; /* zaokrąglone rogi */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* dodanie cienia */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* płynne przejście cienia */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* delikatny efekt podnoszenia */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* zwiększenie cienia przy hover */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
   width: 100%;
-  border-top-left-radius: 10px; /* zaokrąglenie górnych rogów obrazka */
+  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -97,23 +103,105 @@
   right: 0;
   background: rgba(0, 0, 0, 0.75);
   color: #ffffff;
-  padding: 15px; /* dodatkowy padding */
+  padding: 15px;
   transition: transform 0.3s ease;
   transform: translateY(100%);
-  text-align: center; /* wyśrodkowanie tekstu */
+  text-align: center;
 }
 
 .project-info h5,
 .project-info p {
-  margin: 10px 0; /* marginesy dla tekstu */
+  margin: 10px 0;
 }
 
 .project-card-btns {
   display: flex;
-  justify-content: space-between; /* wyrównanie przycisków */
-  padding: 0 10px; /* padding do wyrównania przycisków */
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .project-card:hover .project-info {
   transform: translateY(0);
+}
+
+.facts {
+  padding-bottom: 30px;
+}
+
+.facts .count-box {
+  padding: 30px;
+  width: 100%;
+}
+
+.facts .count-box i {
+  display: block;
+  font-size: 44px;
+  color: #149ddd;
+  float: left;
+  line-height: 0;
+}
+
+.facts .count-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  color: #050d18;
+  margin-left: 60px;
+}
+
+.facts .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #122f57;
+}
+
+.facts .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  color: #122f57;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+
+.facts .count-box a:hover {
+  color: #1f5297;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
 }

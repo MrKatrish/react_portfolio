@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import { Element } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import PureCounter from '@srexi/purecounterjs';
 import profileImg from '../assets/profile-picture.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './style.css';
 
 const About = () => {
@@ -12,6 +14,8 @@ const About = () => {
       duration: 1000,
       once: true,
     });
+
+    new PureCounter();
   }, []);
 
   return (
@@ -75,7 +79,7 @@ const About = () => {
         <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
           <div className="count-box">
             <i className="bi bi-emoji-smile"></i>
-            <span className="purecounter">232</span>
+            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" className="purecounter"></span>
             <p><strong>Happy Clients</strong> consequuntur quae</p>
           </div>
         </div>
@@ -83,7 +87,7 @@ const About = () => {
         <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
           <div className="count-box">
             <i className="bi bi-journal-richtext"></i>
-            <span className="purecounter">521</span>
+            <span data-purecounter-start="0" data-purecounter-end="22" data-purecounter-duration="1" className="purecounter"></span>
             <p><strong>Projects</strong> adipisci atque cum quia aut</p>
           </div>
         </div>
@@ -91,7 +95,7 @@ const About = () => {
         <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
           <div className="count-box">
             <i className="bi bi-headset"></i>
-            <span className="purecounter">1453</span>
+            <span data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" className="purecounter"></span>
             <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
           </div>
         </div>
@@ -99,7 +103,7 @@ const About = () => {
         <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
           <div className="count-box">
             <i className="bi bi-people"></i>
-            <span className="purecounter">32</span>
+            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" className="purecounter"></span>
             <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
           </div>
         </div>
@@ -126,15 +130,15 @@ const About = () => {
             </div>
           </div>
           <div className="progress mt-4">
-            <span className="skill">HTML <i className="val">100%</i></span>
+            <span className="skill">CSS <i className="val">90%</i></span>
             <div className="progress-bar-wrap">
-              <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></div>
+              <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style={{ width: "90%" }}></div>
             </div>
           </div>
           <div className="progress mt-4">
-            <span className="skill">HTML <i className="val">100%</i></span>
+            <span className="skill">JaveScript <i className="val">65%</i></span>
             <div className="progress-bar-wrap">
-              <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></div>
+              <div className="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style={{ width: "65%" }}></div>
             </div>
           </div>
 
@@ -142,9 +146,9 @@ const About = () => {
         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
           <div className="progress mt-4">
-            <span className="skill">PHP <i className="val">80%</i></span>
+            <span className="skill">node.js <i className="val">50%</i></span>
             <div className="progress-bar-wrap">
-              <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={{ width: "80%" }}></div>
+              <div className="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style={{ width: "50%" }}></div>
             </div>
           </div>
 
@@ -156,9 +160,9 @@ const About = () => {
           </div>
 
           <div className="progress mt-4">
-            <span className="skill">PHP <i className="val">80%</i></span>
+            <span className="skill">react.js <i className="val">30%</i></span>
             <div className="progress-bar-wrap">
-              <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style={{ width: "80%" }}></div>
+              <div className="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style={{ width: "30%" }}></div>
             </div>
           </div>
 
