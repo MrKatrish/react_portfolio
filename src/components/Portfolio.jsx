@@ -5,48 +5,54 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
-import localImage from '../assets/cards/Team Profile Generator.png';
+
+import teamProfileGeneratorImg from '../assets/cards/Team Profile Generator.png';
+import readmeGeneratorImg from '../assets/cards/README Generator.png';
+import curioCityImg from '../assets/cards/CurioCity.png';
+import weatherDashboardImg from '../assets/cards/Weather Dashboard.png';
+import workDayScheduleImg from '../assets/cards/Work Day Schedule.png';
+import codeQuizImg from '../assets/cards/Code Quiz.png';
 
 const projects = [
     {
         title: "Team Profile Generator",
         description: "Generate team profiles using Node.js",
-        image: "../../assets/cards/Team Profile Generator.png",
+        image: teamProfileGeneratorImg,
         deployedLink: "https://mrkatrish.github.io/team_profile_generator/",
         githubLink: "https://github.com/MrKatrish/team_profile_generator"
     },
     {
         title: "README Generator",
         description: "Generate README files using Node.js",
-        image: "src/assets/cards/README Generator.png", 
+        image: readmeGeneratorImg, 
         deployedLink: "https://github.com/MrKatrish/README_Generator",
         githubLink: "https://github.com/MrKatrish/README_Generator"
     },
     {
         title: "CurioCity",
         description: "Explore various cities around the world",
-        image: "src/assets/cards/CurioCity.png",
+        image: curioCityImg,
         deployedLink: "https://mrkatrish.github.io/CurioCity/",
         githubLink: "https://github.com/MrKatrish/CurioCity"
     },
     {
         title: "Weather Dashboard",
         description: "Check the weather forecast for any city",
-        image: "src/assets/cards/Weather Dashboard.png",
+        image: weatherDashboardImg,
         deployedLink: "https://mrkatrish.github.io/weather_dashboard/",
         githubLink: "https://github.com/MrKatrish/weather_dashboard"
     },
     {
         title: "Work Day Scheduler",
         description: "Plan your workday efficiently",
-        image: "src/assets/cards/Work Day Schedule.png", 
+        image: workDayScheduleImg, 
         deployedLink: "https://mrkatrish.github.io/work_day_scheduler/",
         githubLink: "https://github.com/MrKatrish/work_day_scheduler"
     },
     {
         title: "Code Quiz",
         description: "Test your coding knowledge with a quiz",
-        image: "src/assets/cards/Code Quiz.png", 
+        image: codeQuizImg, 
         deployedLink: "https://mrkatrish.github.io/code_quiz/",
         githubLink: "https://github.com/MrKatrish/code_quiz"
     }
@@ -78,7 +84,7 @@ const Portfolio = () => {
                                 <ProjectCard
                                     title={project.title}
                                     description={project.description}
-                                    image={localImage}
+                                    image={project.image}
                                     deployedLink={project.deployedLink}
                                     githubLink={project.githubLink}
                                 />
