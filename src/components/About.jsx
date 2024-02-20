@@ -27,22 +27,22 @@ const About = () => {
           <div className="container">
             <div className="section-title">
               <h2 className="text-center mb-5 mt-5 title">About</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis dui, convallis condimentum tincidunt eu, viverra a erat. Proin gravida diam erat, vitae egestas ante ultricies vitae. In ac risus tellus. Sed a sollicitudin nunc. Nulla sodales justo quam, eget tincidunt ligula commodo quis. In id eros metus. Ut sed.</p>
             </div>
 
             <div className="row">
               <div className="col-lg-4" data-aos="fade-right">
-                <img src={profileImg} className="img-fluid" alt="Profile" />
+              <img src={profileImg} className="img-fluid" alt="Profile" style={{ borderRadius: '10px' }} />
               </div>
               <div className="col-lg-8 pt-4 pt-lg-0 content mt-5" data-aos="fade-left">
-                <h3>UI/UX Designer & Web Developer.</h3>
+                <h3>Front-End Developer.</h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis dui, convallis condimentum tincidunt eu, viverra a erat. Proin gravida diam erat, vitae egestas ante ultricies vitae. In ac risus tellus. Sed a sollicitudin nunc. Nulla sodales justo quam, eget tincidunt ligula commodo quis. In id eros metus. Ut sed.
                 </p>
                 <div className="row">
                   <div className="col-lg-6">
                     <ul>
-                      <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                      <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1888</span></li>
                       <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
                       <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
                       <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
@@ -58,7 +58,7 @@ const About = () => {
                   </div>
                 </div>
                 <p>
-                  Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut...
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis dui, convallis condimentum tincidunt eu, viverra a erat. Proin gravida diam erat, vitae egestas ante ultricies vitae. In ac risus tellus. Sed a sollicitudin nunc. Nulla sodales justo quam, eget tincidunt ligula commodo quis. In id eros metus. Ut sed.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const About = () => {
     <div className="container">
       <div className="section-title">
         <h2 className="text-center mb-5 title">Facts</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis dui, convallis condimentum tincidunt eu, viverra a erat. Proin gravida diam erat, vitae egestas ante ultricies vitae. In ac risus tellus. Sed a sollicitudin nunc. Nulla sodales justo quam, eget tincidunt ligula commodo quis. In id eros metus. Ut sed.</p>
       </div>
 
       <div className="row no-gutters">
@@ -117,7 +117,7 @@ const About = () => {
     <div className="container">
       <div className="section-title">
         <h2 className="text-center mb-5 title">Skills</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis dui, convallis condimentum tincidunt eu, viverra a erat. Proin gravida diam erat, vitae egestas ante ultricies vitae. In ac risus tellus. Sed a sollicitudin nunc. Nulla sodales justo quam, eget tincidunt ligula commodo quis. In id eros metus. Ut sed.</p>
       </div>
 
       <div className="row skills-content">

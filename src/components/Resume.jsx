@@ -19,7 +19,7 @@ const Resume = () => {
         <Row className="align-items-center">
         <Col md={6} data-aos="fade-left">
         <h4>Michal Paleczny</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis dui, convallis condimentum tincidunt eu, viverra a erat. Proin gravida diam erat, vitae egestas ante ultricies vitae. In ac risus tellus. Sed a sollicitudin nunc. Nulla sodales justo quam, eget tincidunt ligula commodo quis. In id eros metus. Ut sed.</em></p>
 
               <h3 className="resume-title">Education</h3>
             <div className="resume-item">
